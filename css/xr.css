@@ -1,0 +1,31 @@
+.box{
+    width: 1400px;
+    height: 200px;
+    margin: 0 auto;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    list-style: none;
+    width: 400px;
+    margin: 40px auto;
+}
+
+.box>div>img {
+    width: 400px;
+}
+
+.box>div>p {
+    margin: 20px 0;
+}
+
+.box>div>div {
+    padding: 20px 0;
+}
+
+.box>div {
+    border-bottom: 2px solid #ccc;
+}

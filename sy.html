@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/xr.css">
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+<script src="./js/doT.min.js"></script>
+<script>
+    var ajax = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
+    ajax.open('get', './json/小课堂.json', true);
+    ajax.send();
+    ajax.onreadystatechange = function () {
+        if (ajax.readyState == 4) {
+            if (ajax.status == 200) {
+                var data = JSON.parse(ajax.responseText);
+                var tempText = doT.template(document.getElementById('temp_id').innerHTML);
+                document.getElementsByClassName('box')[0].innerHTML = tempText(data);
+            }
+        }
+    }
+</script>
+<script id="temp_id" type="text/x-dot-template">
+    {{~it:value:xr}}
+    <div>
+        <img src="{{=value.img}}" alt="">
+        <p>{{=value.title}}</p>
+        <p>{{=value.time}}</p>
+        <p>{{=value.text}}</p>
+    </div>
+    {{~}}
+</script>
+
+</html>
