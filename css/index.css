@@ -1,0 +1,263 @@
+.swiper {
+  width: 100%;
+  height: 2rem;
+  overflow: hidden;
+  --swiper-theme-color: #ffffff;
+  --swiper-pagination-color: #ffffff;
+  --swiper-navigation-size: 0.2rem;
+}
+.swiper .swiper-slide > img {
+  height: 100%;
+}
+.swiper .swiper-pagination {
+  bottom: -0.2rem;
+}
+.product-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product-center .product-center-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.1rem;
+}
+.product-center .product-center-title > p {
+  height: 0.25rem;
+}
+.product-center .product-center-title .product-center-title-Chinese {
+  font-size: 0.18rem;
+  font-weight: 600;
+  color: #379818;
+}
+.product-center .product-center-title .product-center-title-English {
+  font-size: 0.12rem;
+}
+.product-center .product-center-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.product-center .product-center-content .product-center-content1 {
+  width: 45%;
+  box-sizing: border-box;
+  border: 0.001rem solid #f7f7f7;
+  margin: 0.05rem 0 0.05rem 0;
+}
+.product-center .product-center-content .product-center-content1 .product-center-content1-picture {
+  height: 1.8rem;
+  box-sizing: border-box;
+  border: 0.005rem solid #e2e2e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-center .product-center-content .product-center-content1 .product-center-content1-picture img {
+  width: 100%;
+}
+.product-center .product-center-content .product-center-content1 .product-center-content1-text {
+  font-size: 0.16rem;
+  width: 90%;
+  margin-left: 5%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.product-center .product-center-more {
+  width: 100%;
+  height: 0.4rem;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.14rem;
+}
+.product-center .product-center-more .icon-gengduo1 {
+  font-size: 0.2rem;
+}
+.news-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.news-center .news-center-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.1rem;
+}
+.news-center .news-center-title > p {
+  height: 0.25rem;
+}
+.news-center .news-center-title .news-center-title-Chinese {
+  font-size: 0.18rem;
+  font-weight: 600;
+  color: #379818;
+}
+.news-center .news-center-title .news-center-title-English {
+  font-size: 0.12rem;
+}
+.news-center .news-center-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.news-center .news-center-content .news-center-content1 {
+  width: 45%;
+  box-sizing: border-box;
+  border: 0.001rem solid #f7f7f7;
+  margin: 0.05rem 0 0.05rem 0;
+}
+.news-center .news-center-content .news-center-content1 .news-center-content1-picture {
+  height: 1.3rem;
+  box-sizing: border-box;
+  border: 0.005rem solid #e2e2e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.news-center .news-center-content .news-center-content1 .news-center-content1-picture img {
+  width: 100%;
+}
+.news-center .news-center-content .news-center-content1 .news-center-content1-text {
+  width: 90%;
+  margin-left: 5%;
+}
+.news-center .news-center-content .news-center-content1 .news-center-content1-text .news-center-content1-text-title {
+  font-size: 0.16rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.news-center .news-center-content .news-center-content1 .news-center-content1-text .news-center-content1-text-title .icon-youjiantou {
+  font-size: 0.16rem;
+}
+.news-center .news-center-content .news-center-content1 .news-center-content1-text .news-center-content1-text-time,
+.news-center .news-center-content .news-center-content1 .news-center-content1-text .news-center-content1-text-commit {
+  font-size: 0.12rem;
+  color: #837f7f;
+}
+.news-center .news-center-content .news-center-content1 .news-center-content1-text .icon-pinglunxuanzhong {
+  font-size: 0.1rem;
+}
+.news-center .news-center-more {
+  width: 100%;
+  height: 0.4rem;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.14rem;
+}
+.news-center .news-center-more .icon-gengduo1 {
+  font-size: 0.2rem;
+}
+.small-class {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.2rem;
+}
+.small-class .class-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.1rem;
+}
+.small-class .class-title > p {
+  height: 0.25rem;
+}
+.small-class .class-title .class-title-Chinese {
+  font-size: 0.18rem;
+  font-weight: 600;
+  color: #379818;
+}
+.small-class .class-title .class-title-English {
+  font-size: 0.12rem;
+}
+.small-class .class-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.small-class .class-content .class-content1 {
+  width: 100%;
+  height: 1.5rem;
+  box-sizing: border-box;
+  border: 0.01rem solid #f7f7f7;
+  margin: 0.05rem 0 0.05rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.small-class .class-content .class-content1 .class-content1-picture {
+  width: 30%;
+  height: 1rem;
+}
+.small-class .class-content .class-content1 .class-content1-picture1 {
+  background: url(../img/class1.jpg) center no-repeat;
+  background-size: 1rem 1rem;
+}
+.small-class .class-content .class-content1 .class-content1-picture2 {
+  background: url(../img/class2.jpg) center no-repeat;
+  background-size: 1rem 1rem;
+}
+.small-class .class-content .class-content1 .class-content1-picture3 {
+  background: url(../img/class3.jpg) center no-repeat;
+  background-size: 1rem 1rem;
+}
+.small-class .class-content .class-content1 .class-content1-picture4 {
+  background: url(../img/class4.jpg) center no-repeat;
+  background-size: 1rem 1rem;
+}
+.small-class .class-content .class-content1 .class-content1-text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.small-class .class-content .class-content1 .class-content1-text > p {
+  height: 0.3rem;
+}
+.small-class .class-content .class-content1 .class-content1-text .class-content1-text-title {
+  font-size: 0.16rem;
+}
+.small-class .class-content .class-content1 .class-content1-text .class-content1-text-time-commit,
+.small-class .class-content .class-content1 .class-content1-text .class-content1-texts {
+  font-size: 0.12rem;
+  color: #837f7f;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.small-class .class-content .class-content1 .class-content1-text .class-content1-texts {
+  font-size: 0.13rem;
+  color: #837f7f;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.small-class .class-more {
+  width: 100%;
+  height: 0.4rem;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.14rem;
+}
+.small-class .class-more .icon-gengduo1 {
+  font-size: 0.2rem;
+}

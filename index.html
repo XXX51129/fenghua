@@ -5,13 +5,339 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="">
+    <title>网站首页</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header&footer.css">
+    <link rel="stylesheet" href="./font_3002270_qvay8jh08zp/iconfont.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/index.css">
     <script src=""></script>
 </head>
 
 <body>
+    <!-- 头部 -->
+    <div class="header">
+        <img src="./img/logo.png" alt="" class="logo">
+        <div class="header-link link1" id="link1">
+            <i class="iconfont icon-gengduo" id="gengduo"></i>
+        </div>
+    </div>
+    <!-- 隐藏的列表 -->
+    <div class="link-text" id="linkText">
+        <ul>
+            <!-- 1-4 -->
+            <a href="./index.html">
+                <li>网站首页</li>
+            </a>
+            <a href="./aboutUs.html">
+                <li>关于我们</li>
+            </a>
+            <a href="./newProduct.html">
+                <li>新品推荐</li>
+            </a>
+            <a href="./productShow.html">
+                <li>产品展示</li>
+            </a>
+            <!-- 5-8 -->
+            <a href="./news.html">
+                <li>新闻中心</li>
+            </a>
+            <a href="./class.html">
+                <li>蜂花小课堂</li>
+            </a>
+            <a href="./join.html">
+                <li>加入蜂花</li>
+            </a>
+            <a href="./relation.html">
+                <li>联系我们</li>
+            </a>
+        </ul>
+    </div>
+    <!-- 轮播图-1 -->
+    <div class="swiper swiper1" id="swiper1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide11">
+                <img src="./img/Swiper1.png" alt="">
+            </div>
+            <div class="swiper-slide  slide12">
+                <img src="./img/Swiper2.jpg" alt="">
+            </div>
+            <div class="swiper-slide slide13">
+                <img src="./img/Swiper3.png" alt="">
+            </div>
+            <div class="swiper-slide slide14">
+                <img src="./img/Swiper4.png" alt="">
+            </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
 
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+    </div>
+    <!-- 产品中心 -->
+    <div class="product-center">
+        <!-- 产品中心 标题 -->
+        <div class="product-center-title">
+            <p class="product-center-title-Chinese">产品中心</p>
+            <p class="product-center-title-English">PRODUCT CENTER</p>
+        </div>
+        <!-- 产品中心 内容 -->
+        <ul class="product-center-content">
+            <li class="product-center-content1">
+                <div class="product-center-content1-picture">
+                    <img src="./img/product1.jpg" alt="">
+                </div>
+                <p class="product-center-content1-text">
+                    500ml蜂花柔顺滢亮洗发露
+                </p>
+            </li>
+            <li class="product-center-content1">
+                <div class="product-center-content1-picture">
+                    <img src="./img/product2.jpg" alt="">
+                </div>
+                <p class="product-center-content1-text">
+                    500ml蜂花柔顺滢亮洗发露
+                </p>
+            </li>
+            <li class="product-center-content1">
+                <div class="product-center-content1-picture">
+                    <img src="./img/product3.jpg" alt="">
+                </div>
+                <p class="product-center-content1-text">
+                    500ml蜂花柔顺滢亮洗发露
+                </p>
+            </li>
+            <li class="product-center-content1">
+                <div class="product-center-content1-picture">
+                    <img src="./img/product4.jpg" alt="">
+                </div>
+                <p class="product-center-content1-text">
+                    500ml蜂花柔顺滢亮洗发露
+                </p>
+            </li>
+        </ul>
+        <!-- 产品中心 更多 -->
+        <div class="product-center-more">
+            <p>
+                <span class="iconfont icon-gengduo1"></span>
+                <span id="productCenterMore">查看更多</span>
+            </p>
+        </div>
+    </div>
+    <!-- 轮播图-2 -->
+    <div class="swiper swiper2" id="swiper2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide11">
+                <img src="./img/Swiper1.png" alt="">
+            </div>
+            <div class="swiper-slide  slide12">
+                <img src="./img/Swiper2.jpg" alt="">
+            </div>
+            <div class="swiper-slide slide13">
+                <img src="./img/Swiper3.png" alt="">
+            </div>
+            <div class="swiper-slide slide14">
+                <img src="./img/Swiper4.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- 新闻中心 -->
+    <div class="news-center">
+        <!-- 新闻中心 标题 -->
+        <div class="news-center-title">
+            <p class="news-center-title-Chinese">新闻中心</p>
+            <p class="news-center-title-English">NEWS CENTER</p>
+        </div>
+        <!-- 新闻中心 内容 -->
+        <ul class="news-center-content">
+            <li class="news-center-content1">
+                <div class="news-center-content1-picture">
+                    <img src="./img/news1.jpg" alt="">
+                </div>
+                <div class="news-center-content1-text">
+                    <p class="news-center-content1-text-title">
+                        <span class="iconfont icon-youjiantou"></span>
+                        蜂花依托社会优质学习资源 打造公司优秀管理团队
+                    </p>
+                    <p class="news-center-content1-text-time">
+                        一天前
+                    </p>
+                    <p class="news-center-content1-text-commit">
+                        <span class="iconfont icon-pinglunxuanzhong"></span>
+                        评论：0
+                    </p>
+                </div>
+            </li>
+            <li class="news-center-content1">
+                <div class="news-center-content1-picture">
+                    <img src="./img/news2.jpg" alt="">
+                </div>
+                <div class="news-center-content1-text">
+                    <p class="news-center-content1-text-title">
+                        <span class="iconfont icon-youjiantou"></span>
+                        公司发放特殊员工福利 庆祝公司荣获上海市五一劳动奖状
+                    </p>
+                    <p class="news-center-content1-text-time">
+                        2021-11-24 11:09
+                    </p>
+                    <p class="news-center-content1-text-commit">
+                        <span class="iconfont icon-pinglunxuanzhong"></span>
+                        评论：0
+                    </p>
+                </div>
+            </li>
+            <li class="news-center-content1">
+                <div class="news-center-content1-picture">
+                    <img src="./img/news3.jpg" alt="">
+                </div>
+                <div class="news-center-content1-text">
+                    <p class="news-center-content1-text-title">
+                        <span class="iconfont icon-youjiantou"></span>
+                        公司参加马桥镇百万党员先锋行主题活动 忆峥嵘 展振兴 走好新时代长征路
+                    </p>
+                    <p class="news-center-content1-text-time">
+                        2021-11-24 10:30
+                    </p>
+                    <p class="news-center-content1-text-commit">
+                        <span class="iconfont icon-pinglunxuanzhong"></span>
+                        评论：0
+                    </p>
+                </div>
+            </li>
+            <li class="news-center-content1">
+                <div class="news-center-content1-picture">
+                    <img src="./img/news4.jpg" alt="">
+                </div>
+                <div class="news-center-content1-text">
+                    <p class="news-center-content1-text-title">
+                        <span class="iconfont icon-youjiantou"></span>
+                        人民代表人民选 公司圆满完成区镇人大代表换届选举工作
+                    </p>
+                    <p class="news-center-content1-text-time">
+                        2021-11-19 15:44
+                    </p>
+                    <p class="news-center-content1-text-commit">
+                        <span class="iconfont icon-pinglunxuanzhong"></span>
+                        评论：0
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <!-- 新闻中心 更多 -->
+        <div class="news-center-more">
+            <p>
+                <span class="iconfont icon-gengduo1"></span>
+                <span id="newsCenterMore">查看更多</span>
+            </p>
+        </div>
+    </div>
+    <!-- 蜂花小课堂 -->
+    <div class="small-class">
+        <!-- 蜂花小课堂 标题 -->
+        <div class="class-title">
+            <p class="class-title-Chinese">蜂花小课堂</p>
+            <p class="class-title-English">SMALL CLASS</p>
+        </div>
+        <!-- 蜂花小课堂 内容 -->
+        <ul class="class-content">
+            <li class="class-content1">
+                <div class="class-content1-picture class-content1-picture1"></div>
+                <div class="class-content1-text">
+                    <p class="class-content1-text-title">
+                        面膜正确的使用方法
+                    </p>
+                    <p class="class-content1-text-time-commit">
+                        <span class="iconfont icon-shijian"></span>
+                        发布时间：2020-09-15 
+                        <span class="iconfont icon-pinglunxuanzhong"></span>
+                        评论：0
+                    </p>
+                    <p class="class-content1-texts">
+                        面膜是我们经常使用的护肤品。补水面膜的普及更是让每家每户都有备用着几片面膜，不过因为面膜的简单实用的使用而让很多人都不注意面膜的使用方法。
+                    </p>
+                </div>
+            </li>
+            <li class="class-content1">
+                <div class="class-content1-picture class-content1-picture2"></div>
+                <div class="class-content1-text">
+                    <p class="class-content1-text-title">
+                        夏季头皮养护，要清凉才够爽
+                    </p>
+                    <p class="class-content1-text-time-commit">
+                        <span class="iconfont icon-shijian"></span>
+                        发布时间：2019-06-12  
+                        <span class="iconfont icon-pinglunxuanzhong"></span>
+                        评论：0
+                    </p>
+                    <p class="class-content1-texts">
+                        夏季天气炎热，比较容易出汗，当然头发也是湿湿的，所以很多人洗头会比较勤。那要怎样正确洗头呢？如果没有正确的养护头皮，长期以来会让头发变得很干枯，严重的时候会对秀发造成严重的影响。下面就给大家介绍一下夏季洗头的小妙招。1：洗发之前要先梳发。这是很多人都容易忽视的细节。梳理不仅可促进头部皮肤的血液循环，减少头发的缠绕磨损及洗发时造成断发，同时还可以清理头皮上的脏东西和鳞屑，方便下一步的清洗。所以，洗头
+                    </p>
+                </div>
+            </li>
+            <li class="class-content1">
+                <div class="class-content1-picture class-content1-picture3"></div>
+                <div class="class-content1-text">
+                    <p class="class-content1-text-title">
+                        蜂蜜与护发
+                    </p>
+                    <p class="class-content1-text-time-commit">
+                        <span class="iconfont icon-shijian"></span>
+                        发布时间：2019-04-22 
+                        <span class="iconfont icon-pinglunxuanzhong"></span>
+                        评论：0
+                    </p>
+                    <p class="class-content1-texts">
+                        《养生论》：“春三月，宜养发”，蜂蜜作为“天然营养剂”，富含多种氨基酸和营养物质，可以滋养润泽秀发。蜂蜜护发的八大功效......
+                    </p>
+                </div>
+            </li>
+            <li class="class-content1">
+                <div class="class-content1-picture class-content1-picture4"></div>
+                <div class="class-content1-text">
+                    <p class="class-content1-text-title">
+                        香水洗护发小常识
+                    </p>
+                    <p class="class-content1-text-time-commit">
+                        <span class="iconfont icon-shijian"></span>
+                        发布时间：2019-01-08  
+                        <span class="iconfont icon-pinglunxuanzhong"></span>
+                        评论：0
+                    </p>
+                    <p class="class-content1-texts">
+                        蜂花香氛系列洗护发产品由香水配方师精心配制，采用植物精萃物、天然香料调制出的，与香水一样，分为前调、中调和尾调，前调......
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <!-- 蜂花小课堂 更多 -->
+        <div class="class-more">
+            <p>
+                <span class="iconfont icon-gengduo1"></span>
+                <span id="classMore">查看更多</span>
+            </p>
+        </div>
+    </div>
+    <!-- 公司信息 -->
+    <footer>
+        <p>Copyright © 2018 上海蜂花日用品有限公司 版权所有 </p>
+        <p>沪ICP备05026320号网站建设:中企动力上海</p>
+    </footer>
+    <!-- 间隔 -->
+    <div class="interval"></div>
+    <!-- 下面的电话 -->
+    <div class="down-phone">
+        <a href="tel:4008810880">
+            <p class="iconfont icon-dianhua"></p>
+            <p>电话</p>
+        </a>
+    </div>
 </body>
+<script src="./js/动态改变页面大小.js"></script>
+<script src="./js/touch-0.2.14.min.js"></script>
+<script src="./js/header&footer.js"></script>
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/index.js"></script>
+
 
 </html>
