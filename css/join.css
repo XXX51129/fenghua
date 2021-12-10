@@ -1,15 +1,15 @@
-.about-us-title {
+.join-us-title {
   width: 100%;
   height: 2.05rem;
 }
-.about-us-title img {
+.join-us-title img {
   width: 100%;
 }
-.about-us-content {
+.join-us-content {
   width: 90%;
   margin: 0.2rem 5%;
 }
-.about-us-content > p {
+.join-us-content > p {
   font-size: 0.14rem;
   text-indent: 0.28rem;
   line-height: 0.3rem;
