@@ -8,7 +8,8 @@
     <title>新闻中心</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/header&footer.css">
-    <link rel="stylesheet" href="./font_3002270_1y40dhlbgdm/iconfont.css">
+    <link rel="stylesheet" href="./font_3002270_qvay8jh08zp/iconfont.css">
+    <link rel="stylesheet" href="./css/news.css">
     <script src=""></script>
 </head>
 
@@ -52,6 +53,27 @@
         </ul>
     </div>
     <!-- 新闻中心 标题 -->
+    <div class="news-title">
+        <img src="./img/news.jpg" alt="">
+    </div>
+    <!-- 新闻中心 内容 -->
+    <ul class="news-content">
+        <!-- <li class="news-content1">
+            <div class="news-content1-picture"></div>
+            <div class="news-content1-text">
+                <p class="news-content1-text-title">
+                    蜂花依托社会优质学习资源   打造公司优秀管理团队
+                </p>
+                <p class="news-content1-text-time-commit">
+                    <span class="iconfont icon-shijian"></span>
+                    发布时间：一天前 
+                </p>
+                <p class="news-content1-texts">
+                    为满足公司智能化新工厂运行需求，提高企业整体运营效率，提升企业管理队伍的沟通技巧，在公司人事行政部的精心策划下，2021年12月4日（周六）全天，特邀百仕瑞特聘培训讲师翟志新来到公司紫东路新工厂为...
+                </p>
+            </div>
+        </li> -->
+    </ul>
     <!-- 公司信息 -->
     <footer>
         <p>Copyright © 2018 上海蜂花日用品有限公司 版权所有 </p>
@@ -70,5 +92,39 @@
 <script src="./js/动态改变页面大小.js"></script>
 <script src="./js/touch-0.2.14.min.js"></script>
 <script src="./js/header&footer.js"></script>
-
+<script src="./js/doT.min.js"></script>
+<script>
+    var ajax = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
+    ajax.open('get', './json/新闻中心.json', true);
+    ajax.send();
+    ajax.onreadystatechange = function () {
+        if (ajax.readyState == 4) {
+            if (ajax.status == 200) {
+                var data = JSON.parse(ajax.responseText);
+                var tempText = doT.template(document.getElementById('news_id').innerHTML);
+                document.getElementsByClassName('news-content')[0].innerHTML = tempText(data);
+            }
+        }
+    }
+</script>
+<!-- 请写的时候千万注意格式 -->
+<script id="news_id" type="text/x-dot-template">
+    {{~it:value:smallClass}}
+    <li class="news-content1">
+        <div class="news-content1-picture" style="background:url({{=value.img}});"></div>
+        <div class="news-content1-text">
+            <p class="news-content1-text-title">
+                {{=value.title}}
+            </p>
+            <p class="news-content1-text-time-commit">
+                <span class="iconfont icon-shijian"></span>
+                发布时间：{{=value.time}} 
+            </p>
+            <p class="news-content1-texts">
+                {{=value.text}}
+            </p>
+        </div>
+    </li>
+    {{~}}
+</script>
 </html>
