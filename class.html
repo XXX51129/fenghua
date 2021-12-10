@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>蜂花小课堂</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header&footer.css">
+    <link rel="stylesheet" href="./font_3002270_qvay8jh08zp/iconfont.css">
+    <link rel="stylesheet" href="./css/smallClass.css">
+    <script src=""></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <img src="./img/logo.png" alt="" class="logo">
+        <div class="header-link link1" id="link1">
+            <i class="iconfont icon-gengduo" id="gengduo"></i>
+        </div>
+    </div>
+    <!-- 隐藏的列表 -->
+    <div class="link-text" id="linkText">
+        <ul>
+            <!-- 1-4 -->
+            <a href="./index.html">
+                <li>网站首页</li>
+            </a>
+            <a href="./aboutUs.html">
+                <li>关于我们</li>
+            </a>
+            <a href="./newProduct.html">
+                <li>新品推荐</li>
+            </a>
+            <a href="./productShow.html">
+                <li>产品展示</li>
+            </a>
+            <!-- 5-8 -->
+            <a href="./news.html">
+                <li>新闻中心</li>
+            </a>
+            <a href="./class.html">
+                <li>蜂花小课堂</li>
+            </a>
+            <a href="./join.html">
+                <li>加入蜂花</li>
+            </a>
+            <a href="./relation.html">
+                <li>联系我们</li>
+            </a>
+        </ul>
+    </div>
+    <!-- 蜂花小课堂 标题 -->
+    <div class="small-class-title">
+        <img src="./img/smallClass.jpg" alt="">
+    </div>
+    <!-- 蜂花小课堂 内容 -->
+    <ul class="smallClass-content">
+        <!-- <li class="smallClass-content1">
+            <div class="smallClass-content1-picture"></div>
+            <div class="smallClass-content1-text">
+                <p class="smallClass-content1-text-title">
+                    面膜正确的使用方法
+                </p>
+                <p class="smallClass-content1-text-time-commit">
+                    <span class="iconfont icon-shijian"></span>
+                    发布时间：2020-09-15 
+                    <span class="iconfont icon-pinglunxuanzhong"></span>
+                    评论：0
+                </p>
+                <p class="smallClass-content1-texts">
+                    面膜是我们经常使用的护肤品。补水面膜的普及更是让每家每户都有备用着几片面膜，不过因为面膜的简单实用的使用而让很多人都不注意面膜的使用方法。
+                </p>
+            </div>
+        </li> -->
+    </ul>
+    <!-- 公司信息 -->
+    <footer>
+        <p>Copyright © 2018 上海蜂花日用品有限公司 版权所有 </p>
+        <p>沪ICP备05026320号网站建设:中企动力上海</p>
+    </footer>
+    <!-- 间隔 -->
+    <div class="interval"></div>
+    <!-- 下面的电话 -->
+    <div class="down-phone">
+        <a href="tel:4008810880">
+            <p class="iconfont icon-dianhua"></p>
+            <p>电话</p>
+        </a>
+    </div>
+</body>
+<script src="./js/动态改变页面大小.js"></script>
+<script src="./js/touch-0.2.14.min.js"></script>
+<script src="./js/header&footer.js"></script>
+<script src="./js/doT.min.js"></script>
+<script>
+    var ajax = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
+    ajax.open('get', './json/小课堂.json', true);
+    ajax.send();
+    ajax.onreadystatechange = function () {
+        if (ajax.readyState == 4) {
+            if (ajax.status == 200) {
+                var data = JSON.parse(ajax.responseText);
+                var tempText = doT.template(document.getElementById('Class_id').innerHTML);
+                document.getElementsByClassName('smallClass-content')[0].innerHTML = tempText(data);
+            }
+        }
+    }
+</script>
+<!-- 请写的时候千万注意格式 -->
+<script id="Class_id" type="text/x-dot-template">
+    {{~it:value:smallClass}}
+    <li class="smallClass-content1">
+        <div class="smallClass-content1-picture" style="background:url({{=value.img}});"></div>
+        <div class="smallClass-content1-text">
+            <p class="smallClass-content1-text-title">
+                {{=value.title}}
+            </p>
+            <p class="smallClass-content1-text-time-commit">
+                <span class="iconfont icon-shijian"></span>
+                发布时间：{{=value.time}} 
+                <span class="iconfont icon-pinglunxuanzhong"></span>
+                评论：0
+            </p>
+            <p class="smallClass-content1-texts">
+                {{=value.text}}
+            </p>
+        </div>
+    </li>
+    {{~}}
+</script>
+</html>
