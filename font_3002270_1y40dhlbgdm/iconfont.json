@@ -1,0 +1,16 @@
+{
+  "id": "3002270",
+  "name": "蜂花",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "20266191",
+      "name": "更多",
+      "font_class": "gengduo",
+      "unicode": "e6da",
+      "unicode_decimal": 59098
+    }
+  ]
+}
