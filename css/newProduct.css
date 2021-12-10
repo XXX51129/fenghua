@@ -1,0 +1,15 @@
+.newProduct-title {
+  width: 100%;
+  height: 2.05rem;
+}
+.newProduct-title img {
+  width: 100%;
+}
+.newProduct-content {
+  width: 90%;
+  margin: 0.2rem 5%;
+}
+.newProduct-content img {
+  width: 100%;
+  height: 2rem;
+}
