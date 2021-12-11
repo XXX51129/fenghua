@@ -37,7 +37,7 @@ var swiper2 = new Swiper('#swiper2', {
 let productCenterMore_ = document.getElementById('productCenterMore');
 
 touch.on(productCenterMore_, 'tap', function () {
-    this.style.color = 'red';
+    this.style.color = '#556B2F';
     this.innerHTML = "加载中……";
 });
 
@@ -45,7 +45,7 @@ touch.on(productCenterMore_, 'tap', function () {
 let newsCenterMore_ = document.getElementById('newsCenterMore');
 
 touch.on(newsCenterMore_, 'tap', function () {
-    this.style.color = 'red';
+    this.style.color = '#556B2F';
     this.innerHTML = "加载中……";
 });
 
@@ -53,6 +53,6 @@ touch.on(newsCenterMore_, 'tap', function () {
 let classMore_ = document.getElementById('classMore');
 
 touch.on(classMore_, 'tap', function () {
-    this.style.color = 'red';
+    this.style.color = '#556B2F';
     this.innerHTML = "加载中……";
 });
