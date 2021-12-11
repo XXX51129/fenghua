@@ -7,6 +7,7 @@ let i = 0;
 touch.on(gengduo_, 'tap', function () {
     if (i++ % 2 === 0) {
         this.style.color = '#556B2F';
+        $(linkText_).fadeIn(2000);
         linkText_.style.display = 'block';
     } else {
         this.style.color = '#379818';
